@@ -378,20 +378,20 @@
       </div>
       
       <div class="fade-up">
-        <form action="https://formspree.io/f/xlgobnyw" method="POST">
+        <form action="https://formspree.io/f/xlgobnyw" method="POST" id="contactForm">
           <div class="form-group">
             <label class="form-label">Your Name</label>
-            <input type="text" class="form-input" placeholder="Jane Smith" />
+            <input type="text" name="name" class="form-input" placeholder="Jane Smith" required />
           </div>
           <div class="form-group">
             <label class="form-label">Email Address</label>
-            <input type="email" class="form-input" placeholder="jane@company.com" />
+            <input type="email" name="email" class="form-input" placeholder="jane@company.com" required />
           </div>
           <div class="form-group">
             <label class="form-label">Message</label>
-            <textarea class="form-textarea" placeholder="Tell me about your project..."></textarea>
+            <textarea name="message" class="form-textarea" placeholder="Tell me about your project..." required></textarea>
           </div>
-          <button class="form-submit" id="sendBtn">Send Message →</button>
+          <button type="submit" class="form-submit" id="sendBtn">Send Message →</button>
         </form>
       </div>
 
