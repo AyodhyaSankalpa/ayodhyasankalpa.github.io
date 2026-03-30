@@ -18,37 +18,33 @@ const observer = new IntersectionObserver((entries) => {
   if (contactForm) {
     contactForm.addEventListener('submit', async function(e) {
       e.preventDefault();
+
       const sendBtn = document.getElementById('sendBtn');
       const originalText = sendBtn.textContent;
+
       sendBtn.textContent = 'Sending...';
-      sendBtn.style.background = '#6b7280';
       sendBtn.disabled = true;
-      
+
+      const formData = new FormData(this);
+
       try {
         const response = await fetch(this.action, {
-          method: this.method,
-          body: new FormData(this),
-          headers: {
-            'Accept': 'application/json'
-          }
+          method: "POST",
+          body: formData
         });
-        
+
         if (response.ok) {
           this.reset();
           sendBtn.textContent = 'Message Sent ✓';
-          sendBtn.style.background = '#16a34a';
         } else {
           sendBtn.textContent = 'Error! Try again.';
-          sendBtn.style.background = '#dc2626';
         }
       } catch (error) {
         sendBtn.textContent = 'Error! Try again.';
-        sendBtn.style.background = '#dc2626';
       }
-      
-      setTimeout(() => { 
-        sendBtn.textContent = originalText; 
-        sendBtn.style.background = ''; 
+
+      setTimeout(() => {
+        sendBtn.textContent = originalText;
         sendBtn.disabled = false;
       }, 3000);
     });
