@@ -65,6 +65,7 @@ window.observer = new IntersectionObserver((entries) => {
     });
   });
 
+
   // Mobile Navigation Logic
   const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
   const indicator = document.querySelector('.mobile-nav-indicator');

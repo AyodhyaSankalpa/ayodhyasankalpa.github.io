@@ -65,9 +65,9 @@
 <body>
 
 <nav>
-  <a href="" class="nav-logo">
-    <span class="nav-logo-dot"></span>
-    Ayodhya
+  <a href="https://ayodhyasankalpa.github.io/" class="nav-logo">
+    <!-- <span class="nav-logo-dot"></span> -->
+    Ayodhya Sankalpa
   </a>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
@@ -221,74 +221,138 @@
       <div>
         <div class="section-tag">Work</div>
         <h2>Selected Projects</h2>
+        <p class="section-desc">A showcase of full-stack systems, mobile apps, and interactive web tools.</p>
       </div>
-      <!-- <a href="#contact" class="btn-ghost" style="font-size:14px; padding:10px 20px;">See All Projects →</a> -->
     </div>
+
+    <!-- Projects Grid -->
     <div class="projects-grid">
-      <div class="project-card fade-up">
-        <div class="project-thumb"><img src="img/5.webp" alt="Vesak card generator" class="project-img" loading="lazy"></div>
-        <div class="project-body">
-          <div class="project-tags">
-            <span class="project-tag red">Web App</span>
-            <span class="project-tag gray">HTML</span>
-            <span class="project-tag gray">JS</span>
-          </div>
-          <h3>Vesak card generator</h3>
-          <p style="color: rgb(38, 36, 36);">Generate Vesak cards for the Vesak Festival with custom messages, names, and greetings.</p>
-          <a href="https://vesak-card.netlify.app/" target="_blank" class="project-link">View →</a>
+      <!-- Project 1: Sinhala Keyboard -->
+      <article class="project-card fade-up" data-category="desktop">
+        <div class="project-thumb">
+          <img src="img/22.png" alt="Grandzen Hotel Management System" class="project-img" loading="lazy">
+          <span class="project-category-badge">Desktop App</span>
         </div>
-      </div>
-      <div class="project-card fade-up">
-        <div class="project-thumb"><img src="img/1.webp" alt="POS System screenshot" class="project-img" loading="lazy"></div>
         <div class="project-body">
-          <div class="project-tags">
-            <span class="project-tag red">Full Stack</span>
-            <span class="project-tag gray">PHP</span>
-            <span class="project-tag gray">MySQL</span>
+          <h3 class="project-title">Sinhala Keyboard</h3>
+          <p class="project-desc">A Lightweight Sinhala Singlish Keyboard for Windows</p>
+          <div class="project-tech-tags">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Win32 Api</span>
+            <span class="tech-tag">Inno Setup</span>
           </div>
-          <h3>POS System</h3>
-          <p style="color: rgb(38, 36, 36);">POS system with real-time updates, role-based access, and AI-powered reporting dashboards.</p>
-          <a href="https://github.com/AyodhyaSankalpa/POS-System" class="project-link">View Project →</a>
+          <div class="project-actions">
+            <a href="https://github.com/AyodhyaSankalpa/sinhala-keyboard/releases/tag/v1.0.0" target="_blank" rel="noopener noreferrer" class="btn-project-link primary">
+              <i class='bx bx-download'></i>
+              <span>Download</span>
+            </a>
+            <a href="https://github.com/AyodhyaSankalpa/sinhala-keyboard" target="_blank" rel="noopener noreferrer" class="btn-project-link">
+              <i class='bx bxl-github'></i>
+              <span>Source Code</span>
+            </a>
+          </div>
         </div>
-      </div>
-      <div class="project-card fade-up">
-        <div class="project-thumb"><img src="img/2.webp" alt="smart chili farm" class="project-img" loading="lazy"></div>
+      </article>
+
+      <!-- Project 1: Vesak Card Generator -->
+      <article class="project-card fade-up" data-category="webapp">
+        <div class="project-thumb">
+          <img src="img/5.webp" alt="Vesak Festival Card Generator" class="project-img" loading="lazy">
+          <span class="project-category-badge">Web App</span>
+        </div>
         <div class="project-body">
-          <div class="project-tags">
-            <span class="project-tag red">Full Stack</span>
-            <span class="project-tag gray">PHP</span>
-            <span class="project-tag gray">MySQL</span>
+          <h3 class="project-title">Vesak Festival Card Generator</h3>
+          <p class="project-desc">Interactive cultural greeting card builder for the Vesak Festival with customizable typography, festive greetings, and instant high-res card export.</p>
+          <div class="project-tech-tags">
+            <span class="tech-tag">HTML5</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">CSS3</span>
+            <span class="tech-tag">Canvas API</span>
           </div>
-          <h3>Smart Chili Farm</h3>
-          <p style="color: rgb(38, 36, 36);">Smart chili farm with real-time fertilizer, water, and climate monitoring system.</p>
-          <a href="https://github.com/AyodhyaSankalpa/Smart-Chili-Farm" class="project-link">View Project →</a>
+          <div class="project-actions">
+            <a href="https://vesak-card.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn-project-link primary">
+              <i class='bx bx-link-external'></i>
+              <span>Live Demo</span>
+            </a>
+            <a href="https://github.com/AyodhyaSankalpa" target="_blank" rel="noopener noreferrer" class="btn-project-link">
+              <i class='bx bxl-github'></i>
+              <span>GitHub</span>
+            </a>
+          </div>
         </div>
-      </div>
-      <!-- <div class="project-card fade-up" id="laravel-projects">
-        <div class="project-thumb"><img src="img/3.webp" alt="Grandzen Hotel Management System" class="project-img" loading="lazy"></div>
+      </article>
+
+      <!-- Project 2: POS System -->
+      <article class="project-card fade-up" data-category="fullstack">
+        <div class="project-thumb">
+          <img src="img/1.webp" alt="Retail & Inventory POS System" class="project-img" loading="lazy">
+          <span class="project-category-badge">Full Stack</span>
+        </div>
         <div class="project-body">
-          <div class="project-tags">
-            <span class="project-tag red">Full Stack</span>
-            <span class="project-tag gray">Laravel</span>
-            <span class="project-tag gray">MySQL</span>
+          <h3 class="project-title">Retail & Inventory POS System</h3>
+          <p class="project-desc">Full-featured Point of Sale application featuring barcode scanning integration, real-time sales logging, inventory tracking, and receipt printing.</p>
+          <div class="project-tech-tags">
+            <span class="tech-tag">PHP</span>
+            <span class="tech-tag">MySQL</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">REST API</span>
           </div>
-          <h3>Grandzen Hotel Management System</h3>
-          <p style="color: rgb(38, 36, 36);">Grandzen Hotel Management System with real-time Booking, Room Management, and User Management.</p>
-          <a href="https://github.com/AyodhyaSankalpa/grandzen_hotel" class="project-link">View Project →</a>
+          <div class="project-actions">
+            <a href="https://github.com/AyodhyaSankalpa/POS-System" target="_blank" rel="noopener noreferrer" class="btn-project-link">
+              <i class='bx bxl-github'></i>
+              <span>Source Code</span>
+            </a>
+          </div>
         </div>
-      </div> -->
-      <div class="project-card fade-up">
-        <div class="project-thumb"><img src="img/4.webp" alt="story app screenshot" class="project-img" loading="lazy"></div>
+      </article>
+
+      <!-- Project 3: Smart Chili Farm -->
+      <article class="project-card fade-up" data-category="fullstack">
+        <div class="project-thumb">
+          <img src="img/2.webp" alt="Smart Chili Farm Monitoring" class="project-img" loading="lazy">
+          <span class="project-category-badge">Web App</span>
+        </div>
         <div class="project-body">
-          <div class="project-tags">
-            <span class="project-tag red">Flutter</span>
-            <span class="project-tag gray">Dart</span>
+          <h3 class="project-title">Smart Chili Farm Monitoring</h3>
+          <p class="project-desc">Agricultural telemetry platform providing real-time tracking for soil moisture, automated irrigation triggers, and environmental microclimate conditions.</p>
+          <div class="project-tech-tags">
+            <span class="tech-tag">PHP</span>
+            <span class="tech-tag">MySQL</span>
+            <span class="tech-tag">IoT Sensors</span>
+            <span class="tech-tag">Chart.js</span>
           </div>
-          <h3>Story App</h3>
-          <p style="color: rgb(38, 36, 36);">Story app using flutter and dart.</p>
-          <a href="https://github.com/AyodhyaSankalpa/Story-App" class="project-link">View Project →</a>
+          <div class="project-actions">
+            <a href="https://github.com/AyodhyaSankalpa/Smart-Chili-Farm" target="_blank" rel="noopener noreferrer" class="btn-project-link">
+              <i class='bx bxl-github'></i>
+              <span>Source Code</span>
+            </a>
+          </div>
         </div>
-      </div>
+      </article>
+
+      <!-- Project 4: Story App -->
+      <article class="project-card fade-up" data-category="mobile">
+        <div class="project-thumb">
+          <img src="img/4.webp" alt="Story Mobile App" class="project-img" loading="lazy">
+          <span class="project-category-badge">Mobile App</span>
+        </div>
+        <div class="project-body">
+          <h3 class="project-title">Story Mobile App</h3>
+          <p class="project-desc">Cross-platform storytelling mobile application built with Flutter, featuring fluid page transitions, categorized story libraries, and offline reading mode.</p>
+          <div class="project-tech-tags">
+            <span class="tech-tag">Flutter</span>
+            <span class="tech-tag">Dart</span>
+            <span class="tech-tag">Firebase</span>
+            <span class="tech-tag">Mobile UI</span>
+          </div>
+          <div class="project-actions">
+            <a href="https://github.com/AyodhyaSankalpa/Story-App" target="_blank" rel="noopener noreferrer" class="btn-project-link">
+              <i class='bx bxl-github'></i>
+              <span>Source Code</span>
+            </a>
+          </div>
+        </div>
+      </article>
     </div>
   </div>
 </section>
